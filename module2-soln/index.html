@@ -1,55 +1,81 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
-
-/********** Base styles **********/
 * {
   box-sizing: border-box;
 }
-h1 {
-  margin-bottom: 15px;
+
+h1{
   text-align: center;
-  font-family: cursive;
-  font-size: 50px;
-}
-h2 {
-  text-align: right;
-  border: 5px solid black ;
-  border-radius: 5px;
-  width:  90%;
-  color: yellow;
-  margin-left: auto;
-  margin-right: auto;
-  height: 190px;
 }
 
 p {
-  background-color: #808080;
-  height: 130px;
+  background-color: #bfbfbf;
+  border: 2px solid black;
+  height: 150px;
+  margin-right: 10px;
+  padding: 40px 10px 5px 10px;
+  overflow: hidden;
   font-family: cursive;
+}
+
+
+#container {
+  position: relative;
+  
+}
+
+#p1 {
+  background-color: #D59898;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-weight: bold;
+  height: 35px;
+  width: 120px;
+  padding: 10px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+#p2 {
+  background-color:#C14543 ;
   color: white;
-  font-size: 17px;
-  text-align: left;
-  overflow: auto;
-  padding-left: 20px;
-  padding-right: 20px;
-  align-items: center;
-  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-weight: bold;
+  height: 35px;
+  width: 120px;
+  padding: 10px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
 
 }
 
-div {
-  font-family: cursive;
+#p3 {
+ background-color: #E5D198;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-weight: bold;
+  height: 35px;
+  width: 120px;
+  padding: 10px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
 
 }
 
-/* Simple Responsive Framework. */
 .row {
   width: 100%;
+
 }
+
 
 /********** Large devices only **********/
 @media (min-width: 992px) {
@@ -67,6 +93,7 @@ div {
   }
   .col-lg-4 {
     width: 33.33%;
+  
   }
   .col-lg-5 {
     width: 41.66%;
@@ -92,12 +119,15 @@ div {
   .col-lg-12 {
     width: 100%;
   }
+
+  
 }
 
 /********** Medium devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
   .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     float: left;
+   
   }
   .col-md-1 {
     width: 8.33%;
@@ -137,18 +167,73 @@ div {
   }
 }
 
-</style>
-</head>
-<body>
-<h1>Programming Languages</h1>
+/********** Mobile only **********/
+@media (max-width: 767px) {
+  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+    float: left;
+  }
+  .col-sm-1 {
+    width: 8.33%;
+  }
+  .col-sm-2 {
+    width: 16.66%;
+  }
+  .col-sm-3 {
+    width: 25%;
+  }
+  .col-sm-4 {
+    width: 33.33%;
+  
+  }
+  .col-sm-5 {
+    width: 41.66%;
+  }
+  .col-sm-6 {
+    width: 50%;
+  }
+  .col-sm-7 {
+    width: 58.33%;
+  }
+  .col-sm-8 {
+    width: 66.66%;
+  }
+  .col-sm-9 {
+    width: 74.99%;
+  }
+  .col-sm-10 {
+    width: 83.33%;
+  }
+  .col-sm-11 {
+    width: 91.66%;
+  }
+  .col-sm-12 {
+    width: 100%;
+  }
 
+  
+}
+<title>Module2 Assignment</title>
+</style></head>
+<body>
 <div class="row">
-  <div class="col-lg-4 col-md-6 col-sm-12">
-    <h2 style="background-color:lightblue;">HTML&nbsp;<p>The HyperText Markup Language, or HTML is the standard markup language for documents designed to be displayed in a web browser. </p></h2></div>
-  <div class="col-lg-4 col-md-6 col-sm-12">
-    <h2 style="background-color:green;">CSS&nbsp;<p>Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language such as HTML. </p></h2></div>
-  <div class="col-lg-4 col-md-12 col-sm-12">
-    <h2 style="background-color:purple;">Javascript&nbsp;<p>JavaScript, often abbreviated as JS, is a programming language that conforms to the ECMAScript specification. JavaScript is high-level, often just-in-time compiled, and multi-paradigm. </p></h2></div>
-</div>
-</body>
-</html>
+	<h1>Programming Languages</h1>
+  <div class="col-lg-4 col-md-6 col-sm-12" id="container">
+    <p>The HyperText Markup Language, or HTML is the standard markup language for documents designed to be displayed in a web browser.</p>
+  	<p id="p1">HTML</p>
+
+  	</div>
+  	  <div class="col-lg-4 col-md-6 col-sm-12" id="container"><p>Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language such as HTML.</p>
+
+  	<p id="p2">CSS</p>
+
+  </div>
+
+  <div class="col-lg-4 col-md-12 col-sm-12" id="container"><p>JavaScript, often abbreviated as JS, is a programming language that conforms to the ECMAScript specification. JavaScript is high-level, often just-in-time compiled, and multi-paradigm.</p>
+
+  	<p id="p3">Javascript</p>
+
+  </div>
+
+	</div>
+	</body>
+	</html>
